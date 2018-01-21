@@ -1,0 +1,1 @@
+<h3>Добро пожаловать <?=Yii::$app->user->identity->login ?></h3>

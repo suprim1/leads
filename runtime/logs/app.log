@@ -1,0 +1,127 @@
+2018-01-14 19:16:53 [-][-][-][error][ReflectionException] ReflectionException: Class m180114_220553_create_user_table does not exist in J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('m180114_220553_...')
+#1 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('m180114_220553_...')
+#2 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('m180114_220553_...', Array, Array)
+#3 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('m180114_220553_...', Array, Array)
+#4 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\controllers\MigrateController.php(195): yii\BaseYii::createObject(Array)
+#5 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m180114_220553_...')
+#6 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m180114_220553_...')
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#8 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#11 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#12 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#13 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#14 J:\OpenServer\5_2_7\OSPanel\domains\leads\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 J:\OpenServer\5_2_7\OSPanel\domains\leads\yii(20): yii\base\Application->run()
+#16 {main}
+2018-01-14 19:16:50 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '240x10000 (240x64)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00020ADC'
+    'ConEmuBaseDir' => 'J:\\openserver\\5_2_7\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'J:\\openserver\\5_2_7\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x00030ACE'
+    'ConEmuDrive' => 'J:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00050B56'
+    'ConEmuIsAdmin' => 'ADMIN'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '8220'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$$'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '6776'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'j:\\openserver\\5_2_7\\ospanel'
+    'ConEmuWorkDrive' => 'j:'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GPU_MAX_ALLOC_PERCENT' => '100'
+    'GPU_USE_SYNC_OBJECTS' => '1'
+    'HOME' => 'j:\\openserver\\5_2_7\\ospanel'
+    'HOMEDRIVE' => 'j:'
+    'HOMEPATH' => '\\openserver\\5_2_7\\ospanel'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'MAGICK_CODER_FILTER_PATH' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\imagemagick'
+    'MAGICK_HOME' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'j:\\openserver\\5_2_7\\ospanel\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OPENSSL_CONF' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\http\\Apache-PHP-7-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'J:\\openserver\\5_2_7\\ospanel\\modules\\conemu\\ConEmu\\Scripts;J:\\openserver\\5_2_7\\ospanel\\modules\\conemu;J:\\openserver\\5_2_7\\ospanel\\modules\\conemu\\ConEmu;j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\ext;j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\pear;j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\pear\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64;j:\\openserver\\5_2_7\\ospanel\\modules\\imagemagick;j:\\openserver\\5_2_7\\ospanel\\modules\\wget\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\git;j:\\openserver\\5_2_7\\ospanel\\modules\\git\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\git\\mingw\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\git\\cmd;j:\\openserver\\5_2_7\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\http\\Apache-PHP-7-x64\\bin;j:\\openserver\\5_2_7\\ospanel\\modules\\http\\Apache-PHP-7-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHPDIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\'
+    'PHPRC' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64'
+    'PHP_BIN' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_BINARY' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_BINDIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\'
+    'PHP_INI' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'j:\\openserver\\5_2_7\\ospanel\\modules\\php\\PHP-7.1-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'j:\\openserver\\5_2_7\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'j:\\openserver\\5_2_7\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\'
+    'PHP_SELF' => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\yii'
+    'SCRIPT_NAME' => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\yii'
+    'SCRIPT_FILENAME' => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\yii'
+    'PATH_TRANSLATED' => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1515946610.6118
+    'REQUEST_TIME' => 1515946610
+    'argv' => [
+        0 => 'J:\\OpenServer\\5_2_7\\OSPanel\\domains\\leads\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
